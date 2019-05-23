@@ -274,6 +274,8 @@ sidebar.createStructure.photo = function(data) {
 		structure.license
 	];
 
+	if (!$(".sidebar").hasClass("active")) sidebar.toggle();
+
 	return structure
 
 };
@@ -420,6 +422,8 @@ sidebar.createStructure.album = function(data) {
 		structure.share,
 		structure.license
 	];
+
+	if ($(".sidebar").hasClass("active")) sidebar.toggle();
 
 	return structure
 
