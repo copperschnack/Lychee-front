@@ -6,11 +6,12 @@ lychee.locale = {
 		'CANCEL'		: 'Cancel',
 		'SIGN_IN'		: 'Sign In',
 		'CLOSE'			: 'Close',
+		'ABOUT'        	: 'About',
 
 		'SETTINGS'			: 'Settings',
 		'USERS'				: 'Users',
 		'SHARING'			: 'Sharing',
-		'CHANGE_LOGIN'		: 'Change Login',
+		'CHANGE_LOGIN'		: 'Change Login',		
 		'CHANGE_SORTING'	: 'Change Sorting',
 		'SET_DROPBOX'		: 'Set Dropbox',
 		'ABOUT_LYCHEE'		: 'About Lychee',
