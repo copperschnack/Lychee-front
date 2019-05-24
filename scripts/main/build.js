@@ -350,7 +350,7 @@ build.uploadModal = function (title, files) {
 
 };
 
-build.tags = function (tags) {
+build.tags = function (tags, editable) {
 
 	let html = '';
 
@@ -359,7 +359,9 @@ build.tags = function (tags) {
 		tags = tags.split(',');
 
 		tags.forEach(function (tag, index) {
-			html += lychee.html`<a class='tag'>$${tag}<span data-index='${index}'>${build.iconic('x')}</span></a>`
+			html += lychee.html`<a class='tag'>$${tag}`;
+			if (editable) html += `<span data-index='${index}'>${build.iconic('x')}</span>`;
+			html += `</a>`;
 		})
 
 	} else {

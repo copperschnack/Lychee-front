@@ -205,13 +205,13 @@ sidebar.createStructure.photo = function(data) {
 		}
 	}
 
-	// Only create tags section when user logged in
-	if (lychee.publicMode===false && lychee.upload) {
+	// Only create tags section when user logged in or public search enabled
+	if ( (lychee.publicMode===false && lychee.upload) || (lychee.public_search) ) {
 
 		structure.tags = {
 			title : lychee.locale['PHOTO_TAGS'],
 			type  : sidebar.types.TAGS,
-			value : build.tags(data.tags),
+			value : build.tags(data.tags, editable),
 			editable
 		}
 
